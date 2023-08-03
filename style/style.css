@@ -1,0 +1,102 @@
+/*
+  Hints & Tips
+
+  1. Anatomia
+
+  seletor {
+    propriedade: valor;
+  }
+
+  2. seletores
+
+  div - elemento
+  .classe
+  #id
+  [atributo]
+*/
+
+html {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: #222222;
+  min-height: 100vh;
+  background: linear-gradient( to right, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100% );
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+}
+
+.profile {
+  margin-top: 100px;
+}
+
+.profile__header,
+.profile__about {
+  text-align: center;
+}
+
+.profile__header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.profile__header h1, 
+.profile__header h2 {
+  margin: 0;
+}
+
+.profile__header h2 {
+  font-weight: 400;
+}
+
+.profile__about, .links {
+  margin-bottom: 56px;
+}
+
+.links ul {
+  padding: 0;
+}
+
+.links ul, 
+.links ul li  {
+  list-style: none;
+}
+
+.links ul li a {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 16px;
+  border: solid 1px #555;
+  border-radius: 35px;
+  text-decoration: none;
+  padding: 0 24px;
+  transition: 200ms;  
+}
+
+.links ul li a:hover {
+  background-color: #222;
+  color: #fff;
+  transition: 200ms;
+}
+
+.links ul li .label {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
